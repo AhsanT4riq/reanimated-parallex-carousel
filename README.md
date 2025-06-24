@@ -1,50 +1,106 @@
-# Welcome to your Expo app 👋
+# Reanimated Carousel
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A beautiful, interactive carousel component built with React Native Reanimated and Expo. This project showcases smooth animations, gesture handling, and a delightful user experience for browsing through content with a parallax effect.
 
-## Get started
+## Features
 
-1. Install dependencies
+- 🎨 Smooth parallax scrolling effects
+- ✨ High-performance animations with React Native Reanimated
+- 👆 Intuitive gesture handling with React Native Gesture Handler
+- 📱 Responsive design that works on both iOS and Android
+- 🎨 Styled with Tailwind CSS using NativeWind
+- 🚀 Optimized performance with native animations
+- 🌓 Dark mode support
+
+## Demo
+
+[![App Demo GIF](demo/demo.gif)](https://github.com/ahsant4riq/reanimated-carousel/raw/main/demo/demo.mov)
+
+_The GIF above shows a preview of the carousel in action. Click on it to view the full demo video (`demo.mov`)._ (Note: You'll need to add your own demo files)
+
+## Tech Stack
+
+- [Expo](https://expo.dev/) - Development platform
+- [React Native Reanimated](https://docs.swmansion.com/react-native-reanimated/) - For smooth animations
+- [React Native Gesture Handler](https://docs.swmansion.com/react-native-gesture-handler/) - For gesture handling
+- [NativeWind](https://www.nativewind.dev/) - Utility-first CSS framework
+- [TypeScript](https://www.typescriptlang.org/) - For type safety
+
+## Prerequisites
+
+- Node.js (v16 or later)
+- npm or Yarn
+- Expo CLI (`npm install -g expo-cli`)
+- iOS Simulator (for iOS development) or Android Studio (for Android development)
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/ahsant4riq/reanimated-carousel.git
+   cd reanimated-carousel
+   ```
+
+2. Install dependencies:
 
    ```bash
    npm install
+   # or
+   yarn install
    ```
 
-2. Start the app
+3. Start the development server:
 
    ```bash
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+4. Run on your device/emulator:
+   - Press `i` for iOS simulator
+   - Press `a` for Android emulator
+   - Scan the QR code with Expo Go app on your physical device
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Project Structure
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+.
+├── app/                    # Main application screens and navigation (Expo Router)
+├── assets/                 # Static assets (images, fonts, etc.)
+├── components/             # Reusable UI components
+│   └── Wallpaper.tsx       # Wallpaper component with parallax effect
+├── hooks/                  # Custom React hooks
+│   ├── useCarouselLayout.ts # Carousel layout logic
+│   └── useGetWallpapers.ts # Wallpaper data fetching
+├── app.json               # Expo configuration
+└── package.json           # Project dependencies and scripts
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Available Scripts
 
-## Learn more
+- `npm start` - Start the Expo development server
+- `npm run android` - Run on Android device/emulator
+- `npm run ios` - Run on iOS simulator
+- `npm run web` - Run in web browser
 
-To learn more about developing your project with Expo, look at the following resources:
+## Customization
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+You can easily customize the carousel by modifying the following:
 
-## Join the community
+- Wallpaper images in the `assets` directory
+- Animation parameters in `useCarouselLayout` hook
+- Styling in the component files using Tailwind CSS classes
 
-Join our community of developers creating universal apps.
+## Contributing
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Built with ❤️ using Expo and React Native
+- Special thanks to the React Native Reanimated team
+- Inspired by modern mobile UI/UX patterns
